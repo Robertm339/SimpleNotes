@@ -11,6 +11,7 @@
 		455C548C29BC4124004168C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455C548B29BC4124004168C4 /* ContentView.swift */; };
 		455C548E29BC4125004168C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455C548D29BC4125004168C4 /* Assets.xcassets */; };
 		455C549129BC4125004168C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455C549029BC4125004168C4 /* Preview Assets.xcassets */; };
+		45FC603B29BD038F00DD8943 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 45FC603A29BD038F00DD8943 /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FC603B29BD038F00DD8943 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SimpleNotes;
+			packageProductDependencies = (
+				45FC603A29BD038F00DD8943 /* KeychainAccess */,
+			);
 			productName = SimpleNotes;
 			productReference = 455C548629BC4124004168C4 /* SimpleNotes.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 455C547D29BC4124004168C4;
+			packageReferences = (
+				45FC603929BD038F00DD8943 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 455C548729BC4124004168C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45FC603929BD038F00DD8943 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45FC603A29BD038F00DD8943 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45FC603929BD038F00DD8943 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 455C547E29BC4124004168C4 /* Project object */;
 }

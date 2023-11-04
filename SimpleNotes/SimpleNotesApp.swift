@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct SimpleNotesApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Notes") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }
